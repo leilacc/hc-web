@@ -1,0 +1,80 @@
+strong {
+    color: #000063;
+}
+
+#uoft {
+    color: #000063;
+    display: inline-block;
+    font-family: 'Trykker';
+    font-size: 14px;
+    letter-spacing: 8px;
+    text-align: left;
+}
+
+#hc {
+    color: #000063;
+    display: inline-block;
+    font-family: 'News Cycle', Helvetica;
+    font-size: 46px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#logo {
+    margin: 30px 0 20px 0;
+    width: 400px;
+}
+
+#leaf {
+    display: inline;
+    float: right;
+    margin-left: 40%;
+}
+
+.header {
+    // position: fixed;
+    z-index: 100;
+}
+
+.content {
+    // margin-top: 180px;
+}
+
+.sidebar {
+    background-color: #000063;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 60px;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
