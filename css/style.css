@@ -33,17 +33,41 @@ strong {
 }
 
 .header {
-    // position: fixed;
     z-index: 100;
 }
 
 .content {
-    // margin-top: 180px;
 }
 
 .sidebar {
-    background-color: #000063;
+    //background-color: #000063;
 }
+
+.nav-section {
+    font-size: 26px;
+    padding-right: 35px;
+}
+
+.nav-contact {
+    font-size: 16px;
+  //  padding-left: 80px;
+}
+
+.nav a {
+    color: #E5E5E5;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+}
+
+.date {
+    width: 74px;
+}
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
