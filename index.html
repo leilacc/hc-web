@@ -10,7 +10,7 @@
         
         <title>Hackers' Co-op at the University of Toronto</title>
     </head>
-    <body>
+    <body onload="showInitialSection(false);">
         <div id='content-wrapper'>
             <!--
             <div class="container navbar navbar-fixed-top">
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row-fluid content home">
+                <div class="row-fluid content hidden home">
                     <div class="span2 sidebar">
                     </div>
                     <div class="span9">
@@ -200,36 +200,36 @@
                                     <!--
                                     <i class="icon-home icon-white"></i>
                                     -->
-                                    <a href
-                                       onclick="showSection('home');
+                                    <a href='/home'
+                                       onclick="showSection('home', true);
                                                 return false;">
                                         home
                                     </a>
                                 </li>
                                 <li class="active nav-section">
-                                    <a href
-                                        onclick="showSection('projects');
+                                    <a href='/projects'
+                                        onclick="showSection('projects', true);
                                                  return false;">
                                         projects
                                     </a>
                                 </li>
                                 <li class="active nav-section">
-                                    <a href
-                                        onclick="showSection('meetings');
+                                    <a href='/meetings'
+                                        onclick="showSection('meetings', true);
                                                  return false;">
                                         meetings
                                     </a>
                                 </li>
                                 <li class="active nav-section">
-                                    <a href
-                                       onclick="showSection('events');
+                                    <a href='/events'
+                                       onclick="showSection('events', true);
                                                 return false;">
                                        events
                                     </a>
                                 </li>
                                 <li class="active nav-section">
-                                    <a href
-                                       onclick="showSection('sponsors');
+                                    <a href='/sponsors'
+                                       onclick="showSection('sponsors', true);
                                                 return false;">
                                        sponsors
                                     </a>
