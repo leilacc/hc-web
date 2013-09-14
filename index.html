@@ -63,8 +63,56 @@
                         </p>
                         <p class='lead'>
                             If you think this sounds like fun,
-                            <strong>come hang out with us</strong>.
+                            <a href onclick="showSingleSection('form',
+                                                               'visible');
+                                             return false;">
+                                <strong>come hang out with us</strong></a>.
                         </p>
+                        <br>
+                    </div>
+                </div>
+                <div class="row-fluid content hidden form">
+                    <div class="span2 sidebar">
+                    </div>
+                    <div class="span8">
+                        <form action="https://docs.google.com/forms/d/12qF372A5wmQzgvkxUwb4riFQN7cDUIk0LlLvxJt1n0s/formResponse"
+                              method="POST" id="ss-form" target="_self"
+                              class="form-inline" onsubmit="">
+                            <legend>Join the Hackers' Co-operative</legend>
+                                        <input type="text" placeholder="Email"
+                                               name="entry.96441638" value=""
+                                               class="ss-q-short"
+                                               id="entry_96441638" dir="auto"
+                                               title="">
+
+                            <input type="hidden" name="draftResponse"
+                                   value="[]">
+                            <input type="hidden" name="pageHistory" value="0">
+                            <input type="submit" name="submit"
+                                   value="Sign me up!" id="ss-submit">
+                            <br>
+                            <br>
+                            <label>
+                                This will add you to our mailing list,
+                                where we share all the cool opportunities
+                                and events we come across.
+                            </label>
+                        </form>
+                        <!--
+                        <form class="form-inline" name="emailform" method="post"
+                              action="emailform.php">
+                            <fieldset>
+                                <legend>Join the Hackers' Co-operative</legend>
+                                <input type="text" name="email"
+                                       placeholder="Email">
+                                <button type="submit" class="btn">
+                                    Submit
+                                </button>
+                                    <br>
+                                    <br>
+                            </fieldset>
+                        </form>
+                        -->
                     </div>
                 </div>
                 <div class="row-fluid content hidden projects">

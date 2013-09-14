@@ -1,5 +1,6 @@
 function showSection(sectionName, newLoad) {
-    var sectionList = ["home", "projects", "meetings", "events", "sponsors"]
+    var sectionList = ["home", "projects", "meetings", "events", "sponsors",
+                       "form"]
     
     // Remove given section from list
     var index = sectionList.indexOf(sectionName);
@@ -8,15 +9,12 @@ function showSection(sectionName, newLoad) {
     }
 
     // Set class for given section
-    var section = document.getElementsByClassName(sectionName);
-    console.log(section);
-    section[0].className = 'row-fluid content visible ' + sectionName;
+    showSingleSection(sectionName, 'visible');
 
     // Set classes for other sections
     for (var i = 0; i < sectionList.length; i++) {
         var currSectionName = sectionList[i];
-        var currSection = document.getElementsByClassName(currSectionName);
-        currSection[0].className = 'row-fluid content hidden ' + currSectionName;
+        showSingleSection(currSectionName, 'hidden');
     }
 
     if (newLoad) {
@@ -25,6 +23,11 @@ function showSection(sectionName, newLoad) {
         history.pushState(stateObj, sectionName, '/' + sectionName);
     }
 };
+
+function showSingleSection(sectionName, newState) {
+    var section = document.getElementsByClassName(sectionName);
+    section[0].className = 'row-fluid content ' + newState + ' ' + sectionName;
+}
 
 function showInitialSection(newLoad) {
     var url = document.location.href;
