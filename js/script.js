@@ -1,6 +1,6 @@
 function showSection(sectionName, newLoad) {
     var sectionList = ["home", "projects", "meetings", "events", "sponsors",
-                       "join"]
+                       "join", "contact"]
     
     // Remove given section from list
     var index = sectionList.indexOf(sectionName);

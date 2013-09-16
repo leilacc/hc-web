@@ -49,7 +49,11 @@ strong {
 
 .nav-section {
     font-size: 26px;
-    padding-right: 66px;
+    padding-right: 33px;
+}
+
+.nav-contact {
+    font-size: 14px;
 }
 
 .nav a {
