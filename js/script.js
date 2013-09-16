@@ -1,6 +1,6 @@
 function showSection(sectionName, newLoad) {
     var sectionList = ["home", "projects", "meetings", "events", "sponsors",
-                       "form"]
+                       "join"]
     
     // Remove given section from list
     var index = sectionList.indexOf(sectionName);
@@ -26,7 +26,9 @@ function showSection(sectionName, newLoad) {
 
 function showSingleSection(sectionName, newState) {
     var section = document.getElementsByClassName(sectionName);
-    section[0].className = 'row-fluid content ' + newState + ' ' + sectionName;
+    for (var i = 0; i < section.length; i++) {
+        section[i].className = 'row-fluid content ' + newState + ' ' + sectionName;
+    }
 }
 
 function showInitialSection(newLoad) {
@@ -40,6 +42,8 @@ function showInitialSection(newLoad) {
         showSection('events', newLoad);
     } else if (url.indexOf('sponsors') != -1) {
         showSection('sponsors', newLoad);
+    } else if (url.indexOf('join') != -1) {
+        showSection('join', newLoad);
     } else {
         showSection('home', newLoad);
     }

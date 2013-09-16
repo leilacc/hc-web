@@ -2,10 +2,14 @@ strong {
     color: #000063;
 }
 
+.lead a {
+    text-decoration: underline;
+}
+
 #uoft {
     color: #000063;
     display: inline-block;
-    font-family: 'Trykker';
+    font-family: "Times New Roman", Times, serif;
     font-size: 14px;
     letter-spacing: 8px;
     text-align: left;
@@ -45,12 +49,7 @@ strong {
 
 .nav-section {
     font-size: 26px;
-    padding-right: 35px;
-}
-
-.nav-contact {
-    font-size: 16px;
-  //  padding-left: 80px;
+    padding-right: 66px;
 }
 
 .nav a {

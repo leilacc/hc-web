@@ -6,22 +6,11 @@
         <link href="css/bootstrap.css" rel="stylesheet" media="screen">
         
         <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Trykker' rel='stylesheet' type='text/css'>
         
         <title>Hackers' Co-op at the University of Toronto</title>
     </head>
     <body onload="showInitialSection(false);">
         <div id='content-wrapper'>
-            <!--
-            <div class="container navbar navbar-fixed-top">
-                <div class="navbar-inner">
-                    <ul class="nav">
-                        <li class="active">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            -->
             <div class="container-fluid">
                 <div class="row-fluid header">
                     <div class="span2 sidebar">
@@ -37,12 +26,6 @@
                                     CO&#149;OP
                                 </b>
                             </div>
-                            <!--
-                            <div id='leaf'>
-                                <img src='img/maple_leaf.png'
-                                     height='50' width='50'>
-                            </div>
-                            -->
                         </div>
                     </div>
                 </div>
@@ -63,22 +46,34 @@
                         </p>
                         <p class='lead'>
                             If you think this sounds like fun,
-                            <a href onclick="showSingleSection('form',
-                                                               'visible');
+                            <a href onclick="showSection('meetings', true);
                                              return false;">
-                                <strong>come hang out with us</strong></a>.
+                                <b>come hang out with us</b></a>!
                         </p>
-                        <br>
                     </div>
                 </div>
-                <div class="row-fluid content hidden form">
+                <div class="row-fluid content hidden join">
                     <div class="span2 sidebar">
                     </div>
                     <div class="span8">
+                        <p class='lead'>
+                            <strong>Joining</strong> is as easy as showing up
+                            to one of our
+                            <a href='/meetings'>meetings</a>.
+                        </p>
+                        <p class='lead'>
+                            Signing up for our
+                            <strong>mailing list</strong>
+                            is also a good idea.
+                            <br>
+                            This is where we share all the cool
+                            <strong>opportunities</strong>
+                            and <strong>events</strong> we come across.
+                        </p>
+                        <br>
                         <form action="https://docs.google.com/forms/d/12qF372A5wmQzgvkxUwb4riFQN7cDUIk0LlLvxJt1n0s/formResponse"
                               method="POST" id="ss-form" target="_self"
                               class="form-inline" onsubmit="">
-                            <legend>Join the Hackers' Co-operative</legend>
                                         <input type="text" placeholder="Email"
                                                name="entry.96441638" value=""
                                                class="ss-q-short"
@@ -90,29 +85,7 @@
                             <input type="hidden" name="pageHistory" value="0">
                             <input type="submit" name="submit"
                                    value="Sign me up!" id="ss-submit">
-                            <br>
-                            <br>
-                            <label>
-                                This will add you to our mailing list,
-                                where we share all the cool opportunities
-                                and events we come across.
-                            </label>
                         </form>
-                        <!--
-                        <form class="form-inline" name="emailform" method="post"
-                              action="emailform.php">
-                            <fieldset>
-                                <legend>Join the Hackers' Co-operative</legend>
-                                <input type="text" name="email"
-                                       placeholder="Email">
-                                <button type="submit" class="btn">
-                                    Submit
-                                </button>
-                                    <br>
-                                    <br>
-                            </fieldset>
-                        </form>
-                        -->
                     </div>
                 </div>
                 <div class="row-fluid content hidden projects">
@@ -147,17 +120,33 @@
                     </div>
                     <div class="span8">
                         <p class='lead'>
-                            We are in the process of planning
-                            <strong>regular meetings</strong> for the
-                            <strong>fall 2013</strong>
-                            semester.
+                            We meet every <strong>Monday</strong> from
+                            <strong>5-8pm</strong> in
+                            <strong>SC 503</strong>.
                         </p>
                         <p class='lead'>
-                            Help us pick a good time by
-                            <a href='http://doodle.com/pxwzbsquaqa9ae8e'
-                               target="_blank">
-                                filling out your availability</a>.
+                            Our first meeting for fall 2013 is
+                            <strong>September 23</strong>.
+                            See you there!
                         </p>
+                    </div>
+                </div>
+                <div class="row-fluid content hidden meetings">
+                    <div class="span2 sidebar">
+                    </div>
+                    <div class="span8">
+                        <br>
+                        <iframe width="830" height="250" frameborder="0"
+                                scrolling="no" marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=21+Sussex+Avenue,+Toronto,+ON,+Canada&amp;aq=0&amp;oq=21+sussex+av&amp;sll=37.0625,-95.677068&amp;sspn=40.188298,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=21+Sussex+Ave,+Toronto,+Toronto+Division,+Ontario+M5S+1J6,+Canada&amp;t=m&amp;ll=43.666801,-79.403386&amp;spn=0.004657,0.006437&amp;z=16&amp;iwloc=A&amp;output=embed">
+                        </iframe>
+                        <br />
+                        <small>
+                            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=21+Sussex+Avenue,+Toronto,+ON,+Canada&amp;aq=0&amp;oq=21+sussex+av&amp;sll=37.0625,-95.677068&amp;sspn=40.188298,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=21+Sussex+Ave,+Toronto,+Toronto+Division,+Ontario+M5S+1J6,+Canada&amp;t=m&amp;ll=43.666801,-79.403386&amp;spn=0.004657,0.006437&amp;z=16&amp;iwloc=A"
+                               style="color:#0000FF;text-align:left">
+                                View Larger Map
+                            </a>
+                        </small>
                     </div>
                 </div>
                 <div class="row-fluid content hidden events">
@@ -282,10 +271,11 @@
                                        sponsors
                                     </a>
                                 </li>
-                                <li class="active nav-contact">
-                                    email:
-                                    <a href='mailto:l.chancurrie@utoronto.ca'>
-                                        l.chancurrie@utoronto.ca
+                                <li class="active nav-section">
+                                    <a href='/join'
+                                       onclick="showSection('join', true);
+                                                return false;">
+                                       join!
                                     </a>
                                 </li>
                             </ul>
